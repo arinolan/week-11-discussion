@@ -1,0 +1,78 @@
+---
+title: "week 11 discussion"
+output: html_document
+date: "2022-11-07"
+---
+
+Introduction
+I have experienced very well curated music experience with Spotify and it is my default go-to music radio at my home especially since it is very well integrated with the smart speakers - Google Home and Amazon Alexa.
+
+Simply put, the site will initially predict what one might like based on the taste of similar listeners. It then adjusts its weightings as one listens more according to their feedback and choicesMost recommendations come in at midnight (from playlists) or in the morning (from social media) and are then listened to throughout the day..
+
+Scenario Analysis
+
+1) Who are the target users?
+The target users are music lovers from all age groups, genders using the internet-connected streaming service via various mobile and home electronic sources like Phone, Smart Speakers, Laptops, TV, Tablets, Car Audio etc.
+
+2) What are the key goals?
+Provide state-of-the-art uniquely curated music with a mix of variety so as to allow music lovers - Maximize user’s satisfaction - Recommend songs to hit top songs of user’s favourite list - Keep the user engaged in the music app to compete against other similar competitive legacy streaming services like iTunes, Pandora, Soundcloud, Deezer as well as new players like Amazon Music, Google Music
+
+Currently, Spotify achieves a good recommendation that includes Time and Song Attributes.
+
+3) How can you help them accomplish the goals?
+Uses various sources and ways of recommendation
+Integrate voice recognition and NLP to ascertain the listeners mood, choice and environment
+Use AI and ML to gauge the feedback system
+
+Reverse Engineering
+
+There are three types of Spotify playlists :
+1. Spotify People Curated - Hand-picked songs by their expert musical staff
+2. Spotify Algorithm Created - Based on what you and other listeners are listening to the most 2. Personally Created -You pick the song
+3. User Created - Other users pick.
+
+Discover Weekly falls in the number two bucket. So what you are presented is based on what you’ve been listening to. Spotify has a very sophisticated algorithm to create everything.
+
+Discover Weekly
+Looking at the recommender algorithm that Spotify employs, it was interesting to find that Spotify doesn’t actually use a single revolutionary recommendation model. Instead, they mix together some of the best strategies used by other services to create their own uniquely powerful discovery engine.
+
+There are following main types of recommendation models that Spotify employs:~
+
+1. Collaborative Filtering models: Analyzes both user behavior and others’ behaviors (i.e. the ones that Last.fm originally used) - Uses K-nearest neighbour (KNN) technique - Music taste of users calculates distance between different users - Search for neighbour users who share similar interest in music and recommend content - Daily life: friend’s recommendation
+
+2. Natural Language Processing (NLP) models: Analyzes text within the audio trac
+
+3. Content-based recommendation in Audio models: Analyzes the raw audio tracks themselves with convolutional neural networks! - Without user’s evaluation or ratings - Uses machine language to acquire information - Algorithms: decision trees, neural networks and vector-based methods
+
+4. Knowledge based recommendation in Taste Profile: Spotify predicts what genres and microgenres you like based on songs, artists, and playlists you repeatedly listened to in the past, and recommends new songs from similar categories. On the flip side, Spotify learns which songs, artists, and playlists you don’t like based on the songs you skip often and uses this to improve their model. - Based on demands and preferences of user - Predictions decided by functions and features of objects
+
+Additionally, Spotify uses traditional models as well a. Memory-based : Predict items based on previous ratings b. Model-based : Uses algorithms and models preferences c. Hybrid : Combines both models and outperforms them
+
+Some basic APIs to get a high level insight of Spotify’s proprietary algorithm:
+Get Recommendation - https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations 
+Spotify Recommendation Algorithm Hack - https://www.theverge.com/tldr/2018/2/5/16974194/spotify-recommendation-algorithm-playlist-hack-nelson
+
+Current Technology behind Recommender System
+The recommendation systems that Spotify use collect and process large volumes of data. With over 100 million users and 30 million songs on their database, it’s remarkable that they can maintain data pipelines that allow them to actively personalize recommendations for every user every week. Of course, advancements in big data technologies have helped and made this task easier. Spotify uses Hadoop clusters to distribute the load of managing such voluminous data and discover new songs weekly.
+
+Current Issues with Recommender System
+Cold-start problem
+Unusual taste leads to poor recommendations
+Personalization weakened with popular songs recommended
+Big amount of data needed
+
+Suggestions on Improving the Recommender System
+Provide a recommended music as a blend of local weather and user prefences
+
+Include voice based recommendation when using smart speakers to trigger Spotify Discover API. For example, differentiate recommendation between male, female and kid voice
+
+Use a combination of Neural Networks Processing within the device if applicable (similar to Apple Music) or Remote Data Processing (similar to Google Music) to have faster and improved recommendation processing
+
+
+Source References:
+How does the Spotify recommendation algorithm work - https://www.quora.com/How-does-the-Spotify-recommendation-algorithm-work
+Spotify Recmmendation Decoded - https://ericboam.medium.com/i-decoded-the-spotify-recommendation-algorithm-heres-what-i-found-4b0f3654035b
+spotify discover weekly - how machine learning finds your new music - https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe
+Magic that makes spotify discover weekly playlists so damn good - https://qz.com/571007/the-magic-that-makes-spotifys-discover-weekly-playlists-so-damn-good
+Recommendation systems Spotify - https://acadgild.com/blog/recommendation-systems-spotify/
+Music recommendation System - Spotify - http://hpac.rwth-aachen.de/teaching/sem-mus-17/Final-slides/Madathil.pdf
